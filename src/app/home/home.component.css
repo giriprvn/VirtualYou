@@ -1,0 +1,14 @@
+
+.btn-primary {
+    height: 50;
+    border-radius: 5;
+    font-size: 20;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  .btn-primary:disabled {
+    opacity: 0.5;
+  }
+  .btn-default{
+      text-transform: capitalize;
+  }

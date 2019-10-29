@@ -1,0 +1,14 @@
+<ActionBar [title]="title"></ActionBar>
+<GridLayout>
+    <ScrollView class="page">
+        <StackLayout class="p-20">
+            <Label text="Register yourself " class="h1 text-center" textWrap="true"></Label>
+            <Image row="1" [src]="user.imageAsset" stretch="aspectFit" margin="10"></Image>
+            <Button class="btn btn-primary" text="Caputre me" (tap)="captureMe()"></Button>
+            <TextField [(ngModel)]="user.firstName" hint="First Name" width="500"></TextField>
+            <TextField [(ngModel)]="user.lastName" hint="Last Name" width="500"></TextField>
+            <TextField [(ngModel)]="user.alias" hint="Alias" width="500"></TextField>
+            <Button text="Register" class="btn btn-primary" (tap)="register()"></Button>
+        </StackLayout>
+    </ScrollView>
+</GridLayout>

@@ -1,5 +1,15 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <ActionBar [title]="title"></ActionBar>
-<StackLayout  class="p-20">
-    <Label text="Welcome to {{ title }}!" class="h1 text-center" textWrap="true"></Label>
-</StackLayout>
+<GridLayout>
+    <ScrollView class="page">
+        <StackLayout class="p-20">
+            <Image src="res://logo" stretch="none" margin="10,10,10,130"></Image>
+            <Label text="Welcome to {{ title }}!" class="h1 text-center" textWrap="true"></Label>
+            <TextField [(ngModel)]="alias" hint="Enter Microsoft Alais" width="500"></TextField>
+            <Button class="btn btn-primary" text="Sign in" (tap)="isAuthenticated()"></Button>
+            <Label text="or" class="h5 text-center" textWrap="true"></Label>
+            <Button class="btn btn-default" text="Sign up" (tap)="signUp()"></Button>
+        </StackLayout>
+    </ScrollView>
+</GridLayout>
+ 

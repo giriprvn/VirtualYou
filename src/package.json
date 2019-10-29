@@ -1,6 +1,8 @@
 {
   "android": {
-    "v8Flags": "--expose_gc"
+    "v8Flags": "--expose_gc",
+    "markingMode": "none",
+		"requireModules": ["nativescript-camera"]
   },
   "main": "main.js",
   "name": "migration-ng",
